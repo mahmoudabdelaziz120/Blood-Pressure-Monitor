@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_log.h"
+
+#include "hx710.h"
+#include "oled.h"
+#include "pump.h"
+
+static const char *TAG = "BP_MONITOR";
+
+// Measurement states
+typedef enum {
+    STATE_IDLE,
+    STATE_INFLATING,
+    STATE_MEASURING,
+    STATE_DEFLATING,
+    STATE_RESULT,
+    STATE_ERROR
+} bp_state_t;
+
+void app_main(void)
+{
+    ESP_LOGI(TAG, "Blood Pressure Monitor — Initializing...");
+
+    // TODO: Initialize peripherals
+    // hx710_init();
+    // oled_init();
+    // pump_init();
+
+    ESP_LOGI(TAG, "System ready. Press button to start measurement.");
+
+    while (1) {
+        // TODO: Main measurement loop
+        // 1. Wait for button press
+        // 2. Inflate cuff to target pressure
+        // 3. Slowly deflate while sampling HX710
+        // 4. Apply oscillometric algorithm
+        // 5. Display SYS/DIA/MAP on OLED
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+}
