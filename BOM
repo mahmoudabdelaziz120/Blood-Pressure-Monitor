@@ -1,0 +1,14 @@
+Ref,Quantity,Description,Value,Package,Manufacturer,MPN,Notes
+U1,1,Microcontroller,ESP32-WROOM-32,Module,Espressif,ESP32-WROOM-32,Main MCU
+U2,1,24-bit ADC,HX710,SOP-16,AVIA Semiconductor,HX710,For pressure sensor
+U3,1,Pressure Sensor,TBD,TBD,TBD,TBD,Absolute pressure sensor for cuff
+U4,1,LDO Regulator,3.3V,SOT-223,TBD,TBD,Clean 3.3V for analog/digital
+U5,1,Battery Charger IC,TBD,TBD,TBD,TBD,Li-Ion/LiPo charger
+U6,1,Boost Converter,TBD,TBD,TBD,TBD,Step-up for pump voltage
+D1,1,OLED Display,128x64,0.96" I2C,TBD,TBD,I2C address 0x3C
+M1,1,Air Pump,TBD,TBD,TBD,TBD,Cuff inflation
+V1,1,Solenoid Valve,Normally Closed,TBD,TBD,TBD,Cuff deflation control
+SW1,1,Push Button,Tactile,SMD,TBD,TBD,Measure trigger
+SW2,1,Push Button,Tactile,SMD,TBD,TBD,Menu/reset
+J1,1,USB-C Connector,USB 2.0,SMD,TBD,TBD,Power input
+BT1,1,Battery Connector,JST 2-pin,Through-hole,JST,TBD,Li-Ion battery
